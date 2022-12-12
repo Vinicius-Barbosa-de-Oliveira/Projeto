@@ -32,11 +32,7 @@ namespace Projeto_3__bim
 			Console.WriteLine($"Nome do Time: {nome} - Estado: {estado}");
 			Console.WriteLine();
 			return vetor;
-
 		}
-
-
-
 		public override string ToString()
 		{
 			return $"{nome} - {estado}";

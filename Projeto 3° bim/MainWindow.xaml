@@ -7,14 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="AddTime" Content="Button" HorizontalAlignment="Left" Margin="331,54,0,0" VerticalAlignment="Top" Click="AddTime_Click"/>
-        <TextBox x:Name="NomeTime" HorizontalAlignment="Left" Margin="31,55,0,0" Text="Nome do Time" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="EstadoTime" HorizontalAlignment="Left" Margin="186,55,0,0" Text="Estado do Time" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="NomeJogador" HorizontalAlignment="Left" Margin="31,114,0,0" Text="Estado do Time" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Camisa" HorizontalAlignment="Left" Margin="186,114,0,0" Text="Camisa" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Gols" HorizontalAlignment="Left" Margin="336,114,0,0" Text="Gols" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="AddJogador" Content="Button" HorizontalAlignment="Left" Margin="479,113,0,0" VerticalAlignment="Top" Click="AddJogador_Click"/>
-        <TextBox x:Name="Resultados" HorizontalAlignment="Left" Margin="31,172,0,0" Text="Dados" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Height="210"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="359*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AddTime" Content="Adicinar Time" HorizontalAlignment="Right" Margin="0,0,384,360" Click="AddTime_Click" Grid.Column="1" Height="20" VerticalAlignment="Bottom" Width="92"/>
+        <TextBox x:Name="NomeTime" Margin="0,0,649,361" Text="Nome do Time" TextWrapping="Wrap" HorizontalAlignment="Right" Width="120" Grid.ColumnSpan="2" Height="18" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="EstadoTime" Margin="0,0,494,361" Text="Estado do Time" TextWrapping="Wrap" Grid.Column="1" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
+        <TextBox x:Name="NomeJogador" Margin="0,0,649,302" Text="Estado do Time" TextWrapping="Wrap" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="120" Height="18" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="Camisa" Margin="0,0,494,302" Text="Camisa" TextWrapping="Wrap" Grid.Column="1" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
+        <TextBox x:Name="Gols" Margin="0,0,344,302" TextWrapping="Wrap" Text="Gols" Grid.Column="1" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
+        <Button x:Name="AddJogador" Content="Adicionar Jogador" Margin="0,0,208,301" Click="AddJogador_Click" Grid.Column="1" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="113"/>
+        <TextBox x:Name="Resultados" Margin="0,0,429,52" Text="Dados" TextWrapping="Wrap" Grid.ColumnSpan="2" Height="210" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="340"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,691,267" Text="Cadastrados" TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,12,384" Text="Time" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,713,325" Text="Jogador" TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <Button x:Name="mostra" Content="Mostra Jogadores" Grid.Column="1" HorizontalAlignment="Left" Margin="62,387,0,0" VerticalAlignment="Top" Height="22" Width="114" Click="mostra_Click"/>
 
     </Grid>
 </Window>

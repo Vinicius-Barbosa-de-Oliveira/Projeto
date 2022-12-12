@@ -27,12 +27,13 @@ namespace Projeto_3__bim
 
         private void AddTime_Click(object sender, RoutedEventArgs e)
         {
-            Time lista = new Time(NomeTime.Text,);
+            Time lista = new Time(NomeTime.Text, EstadoTime.Text);
         }
 
         private void AddJogador_Click(object sender, RoutedEventArgs e)
         {
-            Jogador j1 = new Jogador(NomeJogador.Text, Camisa.Text,Gols);
+            int gols = int.Parse(Gols.Text);
+            Jogador j1 = new Jogador(NomeJogador.Text, Camisa.Text, gols);
         }
 
     }
