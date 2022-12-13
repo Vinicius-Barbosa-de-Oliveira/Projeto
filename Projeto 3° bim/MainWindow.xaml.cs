@@ -28,13 +28,15 @@ namespace Projeto_3__bim
         private void AddTime_Click(object sender, RoutedEventArgs e)
         {
             Time lista = new Time(NomeTime.Text, EstadoTime.Text);
+            MessageBox.Show("Time Cadastrado.");
         }
 
         private void AddJogador_Click(object sender, RoutedEventArgs e)
         {
             int gols = int.Parse(Gols.Text);
             Jogador j1 = new Jogador(NomeJogador.Text, Camisa.Text, gols);
+            MessageBox.Show("Jogador Cadastrado.");
         }
-
+        
     }
 }

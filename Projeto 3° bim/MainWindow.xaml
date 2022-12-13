@@ -22,7 +22,6 @@
         <TextBlock HorizontalAlignment="Right" Margin="0,0,691,267" Text="Cadastrados" TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Right" Margin="0,0,12,384" Text="Time" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
         <TextBlock HorizontalAlignment="Right" Margin="0,0,713,325" Text="Jogador" TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
-        <Button x:Name="mostra" Content="Mostra Jogadores" Grid.Column="1" HorizontalAlignment="Left" Margin="62,387,0,0" VerticalAlignment="Top" Height="22" Width="114" Click="mostra_Click"/>
-
+        
     </Grid>
 </Window>
